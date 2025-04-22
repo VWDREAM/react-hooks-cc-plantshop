@@ -65,10 +65,9 @@ global.alternatePlants = [
       "price": 55
     }
 ]
-  
+
 global.setFetchResponse = (val) => {
     global.fetch = jest.fn(() => Promise.resolve({
         json: () => Promise.resolve(val)
     }))
 }
-  

@@ -3,10 +3,10 @@ import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 
-function PlantPage() {
+function PlantPage({ onAddPlant }) { // Receive onAddPlant as a prop
   return (
     <main>
-      <NewPlantForm />
+      <NewPlantForm onAddPlant={onAddPlant} /> {/* Pass onAddPlant down to NewPlantForm */}
       <Search />
       <PlantList />
     </main>
